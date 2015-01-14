@@ -41,7 +41,7 @@ class AppController extends Controller {
     public function beforeFilter() {
         parent::beforeFilter();
         try {
-            $this->mc = new Mailchimp(''); //your api key here
+            $this->mc = new Mailchimp(); //your api key here
         } catch (Mailchimp_Error $e) {
             $this->Session->setFlash('You have not set an API key. Set it in Controller/AppController.php', 'flash_error');
         }
