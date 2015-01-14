@@ -2,3 +2,6 @@ tmp/*
 Vendor
 composer.phar
 composer.lock
+*.sublime-project
+*.sublime-workspace
+*.env.php
